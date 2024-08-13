@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar only and footer </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin:  5% 3%;
+    line-height:20px;
+    font-size:18px;
+}
+
+.image-side, .content-side {
+    flex: 1 1 50%;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: left;
+
+}
+h1{
+    text-align: center;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-side:hover img {
+    transform: scale(1.05);
+}
+
+.content-side:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .image-side, .content-side {
+        flex: 1 1 100%;
+    }
+    .container{
+        font-size: 15px;
+    }
+}
+
+    
+</style>
+<body>
+    <div class="preloader"></div>
+    <nav class="navbar">
+        <div class="brand-title">Hill Side</div>
+        <a href="#" class="toggle-button" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li class="active1"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="missionandvission.html">Mission Ans Vision</a>
+                        <a href="#">History</a>
+                        <a href="teachers-datails.html">Teacher Details</a>
+                        <a href="whyhillside.html">Why Hill Side</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Our Course <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="primary.html">Primary</a>
+                        <a href="secondary.html">Secondary</a>
+                    </div>
+                </li>
+                <li><a href="contract.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#">Other <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="#">Notice</a>
+                        <a href="#">Another Link</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+    <div class="content">
+        <div class="container">
+            <div class="image-side">
+                <img src="image/achiment.jpg" alt="Description of image">
+            </div>
+            <div class="content-side">
+                <h1>secondary</h1>
+                <p>
+                    Hill Side Secondary School in Gotikhel, Lalitpur, provides an ideal school environment that embraces the idea that all students can learn. The secondary level comprises classes 7 - 10. At Hill Side, it is expected that students will participate in all areas of the curriculum offered by the school. Hill Side expects parents to ensure their children attend all possible classes and complete all assessment tasks to maximize their learning opportunities and therefore their exam results. An absence due to genuine illness is, of course, understood.<br>
+
+Our faculty consists of teachers who are knowledgeable, care about student learning, and adapt to meet the needs of the students. Our curriculum stays relevant, and we make sure to provide additional course material to boost the curriculum. Our secondary school students are often enrolled in classes such as STEM and get an opportunity to take part in quality programs.<br>
+
+At the secondary level, Hill Side has socially responsible, motivated young adults who excel at academics and pursue their dreams during their formative years. We provide an environment that recognizes that student success is a complex idea and has many parameters.
+                   </p>
+            </div>
+        </div>
+    </div>
+<!-- footer code-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="image/1718181718338.jpg" alt="RAI School Logo">
+            <p>Hill Side </p>
+           
+        </div>
+        <div class="footer-contact">
+            <a href="https://facebook.com" target="_blank">
+                <img src="path/to/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="path/to/instagram-icon.png" alt="Instagram">
+            </a>
+            <p>
+                <span>📍 Gotikhel ( Near coop Reasort ), laitpur</span><br>
+                <span>📞 +977-9801966967, 01-4510436 / 984134233</span><br>
+                <span>✉️ hillside@122gmail.com</span>
+            </p>
+        </div>
+        <div class="footer-links">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="missionandvission.html"></a>Vision and Mission</li>
+                <li><a href="whyhillside.html">Why Hill Side</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="contract.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Hill School. All rights reserved. | Maintained by <a href="#">Susil Dahal</a></p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

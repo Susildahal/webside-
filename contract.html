@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+        /* General Styles */
+        .wrapper {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contact-form {
+           /* Linear gradient background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.429));
+            animation: color1 3s ease-in-out infinite;
+        }
+        @keyframes color1{
+  25%{
+    background: linear-gradient(to right,  rgba(0, 0, 0, 0.949), rgba(0,0, 0, 949));
+  }
+  50%{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.949), rgba(0, 0, 0, 0.764));
+  }
+  75%{
+    background: linear-gradient(to right, rgba(0, 0, 0,0. 949), rgba(0, 0, 0, 0.333));
+  }
+  100%{  
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.8868));
+
+  }
+}
+
+        .contact-form:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #fff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .form-group .error {
+            color: red;
+            font-size: 14px;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+        }
+
+        .submit-btn1 {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: auto;
+        }
+
+        .submit-btn1:hover {
+            background-color: #f1f1f1;
+        }
+
+        .submit-btn1:active {
+            background-color: #ddd;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="preloader"></div>
+    <nav class="navbar">
+        <div class="brand-title">Hill Side</div>
+        <a href="#" class="toggle-button" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li class="active1"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="missionandvission.html">Mission and vision</a>
+                      
+                        <a href="#">History</a>
+                        <a href="teachers-datails.html">Teacher Details</a>
+                        <a href="whyhillside.html">Why Hill Side</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Our Course <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="primary.html">Primary</a>
+                        <a href="secondary.html">Secondary</a>
+                    </div>
+                </li>
+                <li><a href="contract.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#">Other <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="#">Notice</a>
+                        <a href="#">Service</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                    <div class="error" id="addressError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                    <div class="error" id="phoneError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <div class="error" id="messageError"></div>
+                </div>
+                <button type="submit" class="submit-btn1">submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/1718181718338.jpg" alt="RAI School Logo">
+                <p>Hill Side </p>
+               
+            </div>
+            <div class="footer-contact">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="path/to/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="path/to/instagram-icon.png" alt="Instagram">
+                </a>
+                <p>
+                    <span>📍 Gotikhel ( Near coop Reasort ), laitpur</span><br>
+                    <span>📞 +977-9801966967, 01-4510436 / 984134233</span><br>
+                    <span>✉️ hillside@122gmail.com</span>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="missionandvission.html"></a>Vision and Mission</li>
+                    <li><a href="whyhillside.html">Why Hill Side</a></li>
+                    <li><a href="">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="contract.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Hill School. All rights reserved. | Maintained by <a href="#">Susil Dahal</a></p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            let isValid = true;
+
+            // Clear previous error messages
+            document.querySelectorAll('.error').forEach(function(error) {
+                error.textContent = '';
+            });
+
+            // Validate name
+            const name = document.getElementById('name');
+            if (!name.value.trim()) {
+                isValid = false;
+                document.getElementById('nameError').textContent = 'Name is required';
+            }
+
+            // Validate address
+            const address = document.getElementById('address');
+            if (!address.value.trim()) {
+                isValid = false;
+                document.getElementById('addressError').textContent = 'Address is required';
+            }
+
+            // Validate phone number
+            const phone = document.getElementById('phone');
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone.value)) {
+                isValid = false;
+                document.getElementById('phoneError').textContent = 'Phone number must be 10 digits';
+            }
+
+            // Validate message
+            const message = document.getElementById('message');
+            if (!message.value.trim()) {
+                isValid = false;
+                document.getElementById('messageError').textContent = 'Message is required';
+            }
+
+            // Show alert message
+            if (isValid) {
+                alert('Form submitted successfully!');
+            } else {
+                alert('Please fix the errors above.');
+                event.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+           
+
+    

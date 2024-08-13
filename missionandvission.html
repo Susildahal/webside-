@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar only and footer </title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.vision-section, .mission-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+   
+
+}
+
+.vision-section:hover, .mission-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.vision-image, .mission-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.vision-content, .mission-content {
+    padding: 15px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vision-title, .mission-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.vision-text, .mission-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+.vision-image:hover, .mission-image:hover{
+    filter: blur(1px);
+}
+
+</style>
+</head>
+<body>
+    <div class="preloader"></div>
+    <nav class="navbar">
+        <div class="brand-title">Hill Side</div>
+        <a href="#" class="toggle-button" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li class="active1"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="missionandvission.html">Mission and Vision</a>
+                        <a href="#">History</a>
+                        <a href="teachers-datails.html">Teacher Details</a>
+                        <a href="whyhillside.html">Why Hill Side</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Our Course <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="primary.html">Primary</a>
+                        <a href="secondary.html">Secondary</a>
+                    </div>
+                </li>
+                <li><a href="contract.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#">Other <span class="dropdown-icon">&#9660;</span></a>
+                    <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="#">Notice</a>
+                        <a href="#">Another Link</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+    <div class="content">
+        <div class="content-container">
+            <section class="vision-section">
+                <img src="image/1718181770432.jpg" alt="Vision Image" class="vision-image">
+                <div class="vision-content">
+                    <h2 class="vision-title">Vision</h2>
+                    <p class="vision-text">An educational ecosystem where children from diverse communities acquire knowledge and
+                        skill through quality education to face the challenges of technology-supported modern education.<br>
+                        We at Hill Side School believe that each child entrusted to us will receive education in its finest form. Learning is a life-long process and all students and teachers are challenged to exceed their own expectations.<br>
+
+                        No student will be left behind as they are provided with the skills required for life and work in the 21st century. When students complete their school lives, they will have the qualifications, leadership qualities and sense of destiny to be successful and make a positive contribution to society.</p>
+                </div>
+            </section>
+        
+            <section class="mission-section">
+                <img src="image/child4.jpg" alt="Mission Image" class="mission-image">
+                <div class="mission-content">
+                    <h2 class="mission-title">Mission</h2>
+                    <p class="mission-text">To develop, strengthen, and deliver innovative education through a rigorous,
+                        well-rounded curriculum and extra-curricular activities that encourage cognitive, social,
+                        physical, and emotional development.<br>
+                        Hill Side School strives for excellence in everything it does, encouraging students to attain both academic success and personal achievement. The mission of Hill Side  School is to provide each student a diverse education in a safe, supportive environment that promotes sound values, self discipline, motivation and excellence in learning. 
+                        <br>The school assists the students in developing skills to become independent, self-sufficient adults who will succeed and contribute responsibly in a global community.</p>
+                </div>
+            </section>
+        </div>
+        
+
+
+
+    </div>
+<!-- footer code-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="image/1718181718338.jpg" alt="RAI School Logo">
+            <p>Hill Side </p>
+           
+        </div>
+        <div class="footer-contact">
+            <a href="https://facebook.com" target="_blank">
+                <img src="path/to/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="path/to/instagram-icon.png" alt="Instagram">
+            </a>
+            <p>
+                <span>📍 Gotikhel ( Near coop Reasort ), laitpur</span><br>
+                <span>📞 +977-9801966967, 01-4510436 / 984134233</span><br>
+                <span>✉️ hillside@122gmail.com</span>
+            </p>
+        </div>
+        <div class="footer-links">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="missionandvission.html"></a>Vision and Mission</li>
+                <li><a href="whyhillside.html">Why Hill Side</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="contract.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Hill School. All rights reserved. | Maintained by <a href="#">Susil Dahal</a></p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
